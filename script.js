@@ -15,10 +15,12 @@ submit.addEventListener('click',function(e){
 
 let getData = () =>{
     let info = movie.value;
-    fetch(`http://www.omdbapi.com/?s=${info}&apikey=834c23fb`).then(response => {
-    return response.json();
-    }).then(response => {
-        // console.log(response.Search);
+    fetch(`http://www.omdbapi.com/?s=${info}&apikey=834c23fb`)
+    .then(response => {
+        return response.json();
+    })
+    .then(response => {
+        console.log(response.Search);
         let movieArr = response.Search;
         for(let i = 0; i < movieArr.length; i++){
             const title = document.createElement('h1');
@@ -40,7 +42,8 @@ let getData = () =>{
         // poster.setAttribute('src',response.Poster)
         // rating.innerHTML = response.Rated;
 
-    }).catch(error => {
+    })
+    .catch(error => {
         // console.log(err.Error);
         // error.innerHTML = err.Error;
     })
