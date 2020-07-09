@@ -15,7 +15,7 @@ submit.addEventListener('click',function(e){
 
 let getData = () =>{
     let info = movie.value;
-    fetch(`http://www.omdbapi.com/?s=${info}&apikey=834c23fb`)
+    fetch(`https://www.omdbapi.com/?s=${info}&apikey=834c23fb`)
     .then(response => {
         return response.json();
     })
