@@ -1,16 +1,33 @@
 h1{
+    align-items: center;
+    color: burlywood;
+    font-size: xx-large;
+    font-weight: 1400;
+}
+h2{
     color:rgb(255,0,180);   
+}
+body{
+    background-image: url(https://nysci.org/wp-content/uploads/NYSCI-Zoom-Backgrounds2.jpg);
+    justify-content:start;
+    /* background-repeat: space */
 }
 error{
     color:red;
     font-weight: 600;
 }
 .field {
-    width: 50%;
+    width: 85%;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
     overflow-x: auto;
     margin: 10px auto;
     border: 2px black;
-  }
+    background-color: rgb(8, 58, 27)
+}
+
+  .field::-webkit-scrollbar {    
+    display: none;
+}
+

@@ -18,7 +18,7 @@ let getData = () =>{
     fetch(`http://www.omdbapi.com/?s=${info}&apikey=834c23fb`).then(response => {
     return response.json();
     }).then(response => {
-        console.log(response.Search);
+        // console.log(response.Search);
         let movieArr = response.Search;
         for(let i = 0; i < movieArr.length; i++){
             const title = document.createElement('h1');
