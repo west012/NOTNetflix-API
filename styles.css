@@ -1,0 +1,16 @@
+h1{
+    color:rgb(255,0,180);   
+}
+error{
+    color:red;
+    font-weight: 600;
+}
+.field {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: auto;
+    margin: 10px auto;
+    border: 2px black;
+  }
